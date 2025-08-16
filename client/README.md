@@ -13,6 +13,13 @@ pnpm dev
 # or
 bun dev
 ```
+## frontend running command
+npm install
+npm run dev
+
+## backend running command
+npm init-y
+npm start
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
