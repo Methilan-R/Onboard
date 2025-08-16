@@ -6,7 +6,12 @@ import clientRoutes from './routes/client.js'
 dotenv.config()
 const app = express()
 const port = process.env.PORT || 4000
-app.use(cors());
+
+const corsOption={
+  origin:process.env.APPLICATION_URL,
+  methods:"POST,GET"
+};
+app.use(cors(corsOption));
 
 
  
