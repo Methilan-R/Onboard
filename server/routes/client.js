@@ -1,7 +1,7 @@
 import express from 'express'
 import Client from '../modals/Client.js';
 const router = express.Router()
-router.post('/onboard',async(req,res)=>{
+router.post('/',async(req,res)=>{
     try{
         const {fullName,email,companyName,services,budgetUsd,projectStartDate,acceptTerms}=req.body;
         const newClient = new Client({

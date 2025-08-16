@@ -17,7 +17,7 @@ app.use(cors({
  
 app.use(express.json())
 
-app.use('/api',clientRoutes)
+app.use('/api/onboard',clientRoutes)
 ConnectedToDB()
 
 app.get('/',(req,res)=>{
