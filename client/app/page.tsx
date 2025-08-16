@@ -64,6 +64,7 @@ export default function Home() {
   const onSubmit = async (data: FormValues) => {
     setSuccessMsg("");
     try {
+      console.log(process.env.NEXT_PUBLIC_ONBOARD_URL);
       const res = await fetch(`${process.env.NEXT_PUBLIC_ONBOARD_URL}/api/onboard`, {
   method: "POST",
   headers: { "Content-Type": "application/json" },
