@@ -7,10 +7,13 @@ dotenv.config()
 const app = express()
  
 app.use(cors({
-    origin: ["*"],
-    methods:["POST","GET"],
-    credentials:true
-}))
+  origin: 'http://localhost:3000', // or '*' for all origins
+  methods: ['GET','POST','PUT','DELETE','OPTIONS'],
+  allowedHeaders: ['Content-Type', 'Authorization'],
+  credentials: true
+}));
+
+
 
 app.use(express.json())
 
