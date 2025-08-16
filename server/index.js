@@ -7,14 +7,14 @@ dotenv.config()
 const app = express()
  
 app.use(cors({
-  origin: ['http://localhost:3000','https://onboard-m867.vercel.app/'], // or '*' for all origins
+  origin: ['http://localhost:3000','https://onboard-m867.vercel.app'], // or '*' for all origins
   methods: ['GET','POST','PUT','DELETE','OPTIONS'],
   allowedHeaders: ['Content-Type', 'Authorization'],
   credentials: true
 }));
 
 
-
+ 
 app.use(express.json())
 
 app.use('/api',clientRoutes)
